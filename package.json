@@ -1,0 +1,41 @@
+{
+  "name": "dsh-ofm-credits",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "DeepSeek Harness 插件：在输入框下方的状态栏实时显示 our free model（dsh-our-free-model）插件里各个渠道账号的余额——CodeArts、TRAE、Qoder、MiniMax、LobsterAI、Cline、ZCode、Gemini 等逐账号积分/美元/Token/配额，汇总可确认积分合计，点击展开明细面板，30 秒自动轮询（服务端徽标缓存 2 分钟兜底）。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "our-free-model",
+    "credits",
+    "balance"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
