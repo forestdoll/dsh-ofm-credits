@@ -1,8 +1,8 @@
 {
   "name": "dsh-ofm-credits",
-  "version": "1.0.1",
+  "version": "1.3.1",
   "type": "module",
-  "description": "DeepSeek Harness 插件：在输入框下方的状态栏实时显示 our free model（dsh-our-free-model）插件里各个渠道账号的余额——CodeArts、TRAE、Qoder、MiniMax、LobsterAI、Cline、ZCode、Gemini 等逐账号积分/美元/Token/配额，汇总可确认积分合计，点击展开明细面板，30 秒自动轮询（服务端徽标缓存 2 分钟兜底）。",
+  "description": "DeepSeek Harness 插件：在输入框下方的状态栏实时显示 our free model（dsh-our-free-model）插件里各个渠道账号的余额——CodeArts、TRAE、Qoder、MiniMax、LobsterAI、Cline、ZCode、Gemini 等逐账号积分/美元/Token/配额，汇总可确认积分合计，点击展开明细面板，30 秒自动轮询（服务端徽标缓存 2 分钟兜底）；「一键续期」批量换发令牌，逐模型显示可用状态（可用/已关闭/已判死/限流至/令牌过期/无启用账号）并可就地点探测或重新登录。",
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
@@ -25,7 +25,8 @@
     "client.js",
     "cordis.patch.yml",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "keywords": [
     "dsh",
